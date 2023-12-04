@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+ <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Glame</title>
+    <style>
+        body {
+              font-family: 'Arial', 'sans-serif';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+        header {
+        background-color: #ff0000;
+    padding: 30px;
+    text-align: center;
+    color: #fff;
+}
+    header h1 {
+       font-family: 'Times New Roman', serif;
+}
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        #banner {
+            background-color: #fff;
+            padding: 30px;
+            text-align: center;
+        }
+   	 #banner h1 {
+        font-family: 'Times New Roman', serif; /* Changer la police en Times New Roman */
+    }
+
+        #features {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        #features div {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+        }
+  	  #features h3 {
+        font-family: 'Times New Roman', serif; /* Changer la police en Times New Roman */
+        color: #ff0000; /* Garder la couleur rouge pour les titres dans #features */
+    }
+        #newsletter {
+            background-color: #f8f8f8;
+            padding: 30px;
+            text-align: center;
+        }
+
+        footer {
+        background-color: #ff0000; /* Changer la couleur du fond en rouge (#ff0000) */
+        padding: 30px;
+        text-align: center;
+    }
+
+    footer {
+        font-family: 'Times New Roman', serif; /* Changer la police en Times New Roman pour le titre */
+        color: #fff; /* Changer la couleur du texte en blanc */
+    }
+    </style>
+    <script>
+        function toggleParagraph(sectionId, divId) {
+            var paragraph = document.getElementById(sectionId + '-text');
+            var div = document.getElementById(divId);
+
+            if (paragraph.style.display === "none" || paragraph.style.display === "") {
+                paragraph.style.display = "block";
+                div.style.backgroundColor = "#ccc"; // Change la couleur de fond pour indiquer que la section est ouverte
+            } else {
+                paragraph.style.display = "none";
+                div.style.backgroundColor = "#fff"; // Remet la couleur de fond par défaut
+            }
+        }
+    </script>
+</head>
+<body>
+ <header>
+  <img src="C:\Users\Sana Guermazi\Downloads\Glame.png" alt="Logo Glame" style="width: 100px; height: 100px; position: absolute; top: 10px; left: 10px;">
+        <h1>Glame</h1>
+        <nav>
+        </nav>
+    </header>
+    <main>
+        <section id="banner">
+            <h1>La mode pour tous</h1>
+            <p>Ici, vous trouverez certains sujets qui concernent le monde de la mode, de la fast fashion, la discrimination, et les impacts environnementaux de la mode</p>
+        </section>
+
+        <section id="features">
+            <div id="article-1" onclick="toggleParagraph('article-1', 'div-1')">
+                <img src="C:\Users\Sana Guermazi\Desktop\téléchargement (1).jpg"/>
+                <h3>Bonne ou mauvaise ?</h3>
+ <p><b>Ici, vous trouverez certains sujets qui concernent le monde de la mode, de la fast fashion, la discrimination, et les impacts environnementaux de la mode.</b></p>
+                <p id="article-1-text" style="display: none;">
+                   <b> La mode d'avant-guerre </b><br>
+<br>
+La mode serait née dans les années 20, fin de la première guerre mondiale. 
+<br>
+<br>
+ <b>La révolution des années 30 </b><br>
+<br>
+Dans la même époque, les premiers magazines de mode apparaissent et mettent en valeur des modèles souvent jeunes et à la taille très fine. Vers la fin des années 30, le vêtement plus décontracté refait son apparition.<br>
+<br>
+<b>La haute couture ferme ses portes dans les années 40 </b><br>
+<br>
+Les restrictions imposées par la guerre aux hommes et aux femmes en France ont forcé la fermeture des plus grandes maisons de couture. Paris est toujours la capitale de la mode. Depuis la fin de la guerre, les femmes recherchent la  féminité et saluent le retour des vêtements qui accentuent les contours du corps.<br>
+                </p>
+            </div>
+
+            <div id="article-2" onclick="toggleParagraph('article-2', 'div-2')">
+                <img src="C:\Users\Sana Guermazi\Desktop\téléchargement (2).jpg"/>
+                <h3>La réalité derrière ce monde de paillettes !</h3>
+<p><b>Nous allons vous parler de la discrimination de certaines mannequins, des maladies comme l'anorexie, la couleur de peau, le poids, et les imperfections des mannequins.</b></p>
+                <p id="article-2-text" style="display: none;">
+                    Le secteur du mannequinat doit rendre des comptes pour l'exploitation de ses modèles et le racisme qu'elles subissent .
+La mode est fondée sur le rapport entre imitation et distinction, transgression et conformité : introduire de la variété au niveau des mannequins, obéit au système de la mode. Tandis que certains créateurs ont fait part de leur souhait de voir davantage de diversité sur les podiums, les défilés restent majoritairement unicolores. 
+Encore aujourd'hui, la plupart des mannequins ont les cheveux lisses, par exemple. C'est la preuve que l'Occident a un mal fou à intégrer des critères de beauté qui lui sont étranges et que la mentalité n'a pas changé.
+Malheureusemnt la discrimination de certaines mannequin est toujours courante dans le,monde . les agences de mannequinat ne cherche pas des personne ayant des   maladie comme l’anorexie, l'importance de la couleur de peau , Que des mannequin ayant un petit poids ....
+zLe secteur du mannequinat a toujour etait sélectif des models présenté . 
+
+
+                </p>
+            </div>
+
+            <div id="article-3" onclick="toggleParagraph('article-3', 'div-3')">
+                <img src= "C:\Users\Sana Guermazi\Desktop\téléchargement (1).jpg"/>
+                <h3>Bas les masques !</h3> 
+<p><b> Éclaircir les impacts de la mode sur la société et discuter de l'envers du décor de la mode.</b></p>
+                <p id="article-3-text" style="display: none;">
+                    L'industrie de la mode est connue pour avoir un fort impact négatif sur l'environnement, mais nous sommes de plus en plus conscients des conséquences que cette activité a sur les ressources de la planète et de la nécessité de changer radicalement les mécanismes et modes de fonctionnement.
+La mode a un impact sur l'environnement car elle émet une grande quantité de CO2 et est responsable de 35% des microfibres plastiques expulsés dans les océans et de 20% de la pollution industrielle des eaux
+les marques de mode doivent repenser à leur impact environnemental et répondre aux besoins des clients en s'appliquant dans des pratiques plus durables dans le temps car de nombreuses solutions existent déjà. 
+En changeant nos habitudes d'achat, nous pouvons tous avoir un impact positif sur la planète !
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        Tous droits réservés @ 2023 . Site crée par Glame <br>
+contact : bbouassida.eleve@ec-tunis.com / ksaibi.eleve@ec-tunis.com/ otouhami.eleve@ec-tunis.com / adhouib.eleve@ec-tunis.com 
+    </footer>
+</body>
+</html>
